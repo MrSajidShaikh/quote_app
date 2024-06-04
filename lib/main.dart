@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'Screen/QuotesScreen.dart';
 
 void main()
