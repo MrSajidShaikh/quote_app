@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../utils/QuoteList.dart';
 import 'dart:math';
 import 'QuoteModel.dart';
-
 QuoteModel? quoteModel;
 
 class ToggleView extends StatefulWidget {
