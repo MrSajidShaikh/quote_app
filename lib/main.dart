@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quote_app/Screen/ToggleList.dart';
 import 'Screen/QuotesScreen.dart';
 
-void main()
-{
+void main() {
   runApp(const QuoteApp());
 }
 

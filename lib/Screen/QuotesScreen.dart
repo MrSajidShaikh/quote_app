@@ -27,7 +27,7 @@ class _QuotesState extends State<Quotes> {
           child: Column(
             children: List.generate(
               quoteModel!.quoteModelList.length,
-                  (index) => Card(
+              (index) => Card(
                 child: ListTile(
                   title: Text(quoteModel!.quoteModelList[index].quote!),
                   subtitle: Text(quoteModel!.quoteModelList[index].author!),
@@ -48,7 +48,7 @@ class _QuotesState extends State<Quotes> {
               ),
             );
           },
-          child: Icon(Icons.notification_add_outlined),
+          child: const Icon(Icons.notification_add_outlined),
         ),
       ),
     );

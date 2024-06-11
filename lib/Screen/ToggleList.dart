@@ -27,27 +27,32 @@ class _ToggleViewState extends State<ToggleView> {
         appBar: AppBar(
           centerTitle: true,
           backgroundColor: Colors.black12,
-          leading: const Icon(Icons.menu,color: Colors.white,),
+          leading: const Icon(
+            Icons.menu,
+            color: Colors.white,
+          ),
           actions: [
             GestureDetector(
                 onTap: () {
                   setState(() {
-                    if(grid){
+                    if (grid) {
                       grid = false;
-                    }
-                    else{
+                    } else {
                       grid = true;
                     }
                   });
                 },
-                child: Icon(grid?Icons.view_list:Icons.grid_view_outlined,color: Colors.white,)),
+                child: Icon(
+                  grid ? Icons.view_list : Icons.grid_view_outlined,
+                  color: Colors.white,
+                )),
           ],
           title: const Text(
             'Toggle',
-            style: TextStyle(color: Colors.white,fontSize: 30),
+            style: TextStyle(color: Colors.white, fontSize: 30),
           ),
         ),
-        body: grid?gridView():listView(),
+        body: grid ? gridView() : listView(),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             Random random = Random();
@@ -57,7 +62,7 @@ class _ToggleViewState extends State<ToggleView> {
                 context: context,
                 builder: (context) => AlertDialog(
                   backgroundColor:
-                  Colors.accents[Random().nextInt((Colors.accents.length))],
+                      Colors.accents[Random().nextInt((Colors.accents.length))],
                   title: Text(quoteModel!.quoteModelList[x].quote!),
                   content: Text(quoteModel!.quoteModelList[x].author!),
                   actions: [
@@ -93,7 +98,9 @@ class _ToggleViewState extends State<ToggleView> {
             subtitle: Text(quoteModel!.quoteModelList[index].author!),
           ),
         );
-      }, gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,childAspectRatio: 12/16),
+      },
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2, childAspectRatio: 12 / 16),
     );
   }
 
@@ -102,7 +109,6 @@ class _ToggleViewState extends State<ToggleView> {
       itemBuilder: (context, index) {
         return Card(
           margin: const EdgeInsets.all(10),
-
           child: ListTile(
             title: Text(quoteModel!.quoteModelList[index].quote!),
             subtitle: Text(quoteModel!.quoteModelList[index].author!),
