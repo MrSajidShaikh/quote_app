@@ -11,6 +11,7 @@ class Quotes extends StatefulWidget {
   @override
   State<Quotes> createState() => _QuotesState();
 }
+
 class _QuotesState extends State<Quotes> {
   @override
   void initState() {
