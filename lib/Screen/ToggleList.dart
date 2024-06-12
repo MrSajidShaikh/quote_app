@@ -4,7 +4,6 @@ import 'dart:math';
 import 'QuoteModel.dart';
 
 QuoteModel? quoteModel;
-
 class ToggleView extends StatefulWidget {
   const ToggleView({super.key});
 
