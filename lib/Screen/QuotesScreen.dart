@@ -2,7 +2,6 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import '../utils/QuoteList.dart';
 import 'QuoteModel.dart';
-
 QuoteModel? quoteModel;
 
 class Quotes extends StatefulWidget {
