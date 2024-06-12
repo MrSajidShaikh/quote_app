@@ -19,6 +19,7 @@ class _QuotesState extends State<Quotes> {
     super.initState();
   }
 
+  @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
