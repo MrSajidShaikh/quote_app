@@ -20,6 +20,7 @@ class _QuotesState extends State<Quotes> {
   }
 
   @override
+
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
