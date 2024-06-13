@@ -14,6 +14,7 @@ class QuoteApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: ToggleView(),
+
     );
   }
 }
